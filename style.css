@@ -1,0 +1,83 @@
+ul {
+    list-style: none;
+}
+img {
+    border: 4px solid #575D63;
+    padding: 10px;
+}
+body {
+    font-family: 'Georgia', serif;
+    background-color: wheat;
+}
+
+h1,h2 {
+color:white;
+}
+h3,h4,h5{
+    color: blue;
+}
+@media (min-width:768px){
+    .container {
+    width:1000px;
+    }
+}
+.container {
+    margin:3vh auto;
+    padding:10px;
+}
+.page-title {
+    margin:10px auto;
+    text-align: center;
+    color:#cc00ff;
+    font-size: 17px;
+}
+.page-title h1 {
+    font-size:40px;
+    color:#3300ff;
+    line-height: 1;
+}
+.page-title a{
+    color:#ff7777;
+    text-decoration: none;
+}
+.page-title a:hover{
+    text-decoration: underline;
+    color: #ff3333;
+}
+/* End css default */
+
+.menu, .menu >ul {
+    position: relative;
+    background-color: #800;
+    height: 50px;
+}
+.menu >ul >li {
+    display: inline-block;
+    padding:15.5px 0;
+    overflow: hidden;
+}
+.menu >ul >li >a {
+    padding:17px;
+    color:#eee;
+    text-decoration: none;
+}
+.menu .menu-detail {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+.menu >ul >li:hover >div.menu-detail {
+    opacity: 1;
+    height: 300000px;
+    width:100%;
+    visibility: visible;
+    top:50px;
+    right:0;
+    left: 0;
+    z-index: 99;
+    background-color: wheat;
+    color: black;
+    border-top:3px solid #00cc00;
+    overflow: hidden;
+}
